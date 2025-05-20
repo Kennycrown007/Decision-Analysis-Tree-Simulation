@@ -32,10 +32,10 @@ This project models a decision-making scenario involving a land purchase that ma
 ## 🖼️ Output
 
 - Decision tree diagram (Graphviz)
-![decision_tree](https://github.com/user-attachments/assets/b18e560e-1bb2-4822-8441-e18c833caf59)
+  ![decision_tree](https://github.com/user-attachments/assets/b18e560e-1bb2-4822-8441-e18c833caf59)
 
 - EMV dot plot showing impact of expert accuracy
-![EMV Plot](https://github.com/user-attachments/assets/01a798a9-d3e0-4ff9-967a-960343688bb7)
+  ![EMV Plot](https://github.com/user-attachments/assets/01a798a9-d3e0-4ff9-967a-960343688bb7)
 
 - Observations on when hiring the expert is financially beneficial
 
