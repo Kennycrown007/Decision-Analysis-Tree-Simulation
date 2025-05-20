@@ -1,0 +1,26 @@
+digraph {
+	rankdir=LR
+	Start [label=Start]
+	DoNothing [label="Do Nothing
+EMV = $0"]
+	Buy [label="Buy Land
+Cost = $180k"]
+	Start -> DoNothing [label="40%"]
+	Start -> Buy [label="60%"]
+	NoExpert [label="Don't Hire Expert
+P(oil)=0.7"]
+	Expert [label="Hire Expert"]
+	Buy -> NoExpert [label="50%"]
+	Buy -> Expert [label="50%"]
+	Predict_Oil [label="Predict: Oil"]
+	Predict_NoOil [label="Predict: No Oil"]
+	Expert -> Predict_Oil [label=P1]
+	Expert -> Predict_NoOil [label=P2]
+	Drill_Oil [label="Drill (P_oil > threshold)
+Payoff = $1.8M or -$180k"]
+	NoDrill [label="Don’t Drill
+Loss = $180k"]
+	Predict_Oil -> Drill_Oil
+	Predict_NoOil -> Drill_Oil
+	NoExpert -> Drill_Oil
+}
